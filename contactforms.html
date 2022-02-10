@@ -52,6 +52,20 @@
             font-size: 1.25rem;
             width: 50%;
         }
+        input[type=tel] {
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+        input[type=email] {
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+            
+        }
+    
         input[type=submit] {
             display: block;
             padding: 1rem;
@@ -59,8 +73,22 @@
             margin: .5rem;
         }
         body{
-            background-color: #FEFAEC ;
+            background: white;
         }
+        textarea{
+            
+            padding: .5rem;
+            margin: .5rem;
+            font-size: 1.25rem;
+            width: 50%;
+        }
+
+
+            }
+        
+
+        
+            
         
         
 
@@ -88,24 +116,41 @@
     <!-- Main page body here. Use container or DIV -->
     <div class="container">
         <h3>My First Form</h3>
-        <form name="myform" action="#">
-            <label for="fname">First Name</label>
-            <input type="text" name="fname" placeholder="Enter First Name">
+        <div class="container">
+       
+            <form name="myform" action="#">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" placeholder="Enter First Name">
+    
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="Enter Last Name">
+                
+    
+                <label for="lname">Email :</label>
+                <input type="Email" name="lname" placeholder="Enter Email ">
+    
+                <label for="lname">Phone Number:</label>
+                <input type="tel" name="lname" placeholder="Enter Phone Number ">
+               
+    
+                <label for="message">feedback:</label>
+               
+                <form action="/action_page.php">
+                  <textarea name="message"  placeholder="type feedback here!"></textarea>
+                  
+                
+    
+    
+    
+    
+                <input type="submit" name="submit" value="Submit form">
+            </form>
 
-            <label for="lname">Last Name:</label>
-            <input type="text" name="lname" placeholder="Enter Last Name">
+
+
+
             
-            <label for="lname">Email:</label>
-            <input type="text" name="Email" placeholder="Enter Email">
-
-            <label for="lname">Phone Number:</label>
-            <input type="text" name="Phone Number" placeholder="Enter Phone Number">
-
-            <label for="lname">Message:</label>
-            <input type="text" name="Message" placeholder="Enter Any Comments">
-
-            <input type="submit" name="submit" value="Submit Form">
-        </form>
+            
         
 
 
